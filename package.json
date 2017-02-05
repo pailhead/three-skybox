@@ -1,0 +1,33 @@
+{
+  "name": "three-skybox",
+  "version": "0.0.1",
+  "description": "an abstract skybox class for three.js",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^8.1.1",
+    "canvas-testbed": "^1.0.3",
+    "scriptjs": "^2.5.7",
+    "three": "^0.82.1",
+    "wzrd": "^1.2.1"
+  },
+  "scripts": {
+    "start": "wzrd test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pailhead/three-skybox.git"
+  },
+  "keywords": [
+    "threejs",
+    "webgl",
+    "skybox",
+    "glsl"
+  ],
+  "author": "Dusan Bosnjak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pailhead/three-skybox/issues"
+  },
+  "homepage": "https://github.com/pailhead/three-skybox#readme"
+}
