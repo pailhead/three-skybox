@@ -36,7 +36,7 @@ Where it could provide some performance saving is by removing the need for the `
 
 # Properties
 
-* ** cubemap:[ THREE.TextureCube ]** 
+* **cubemap:[ THREE.TextureCube ]** 
 
 	the cubemap currently assigned to the skybox
 
