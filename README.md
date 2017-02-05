@@ -1,5 +1,9 @@
 # SkyBox
 
+[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
+
+[![NPM](https://nodei.co/npm/three-skybox.png)](https://npmjs.org/package/three-skybox)
+
 [A self contained class for drawing a skybox](http://dusanbosnjak.com/test/webGL/three-skybox/). This feature now exists in three.js (`Scene.background`) but uses matrices to compute the camera. This one has a slightly different approach, since the cameraPosition is available in shaders as a uniform by default, we can avoid some computation that happens with the `backgroundBoxCamera` in `THREE.WebGLRenderer`. 
 
 The shader here does one addition and 2 matrix multiplications:
@@ -21,7 +25,7 @@ Where it could provide some performance saving is by removing the need for the `
 	backgroundBoxCamera.matrixWorld.extractRotation( camera.matrixWorld ); //these are somewhat expensive operations
 	backgroundBoxCamera.matrixWorldInverse.getInverse( backgroundBoxCamera.matrixWorld );
 	backgroundBoxMesh.modelViewMatrix.multiplyMatrices( backgroundBoxCamera.matrixWorldInverse, backgroundBoxMesh.matrixWorld );
-	
+
 
 # Constructor
 
@@ -62,7 +66,7 @@ function render(){
 
 	skybox.render( camera );
 
-	myRenderer.render( scene , camera )
+	renderer.render( scene , camera )
 
 }
 ```
