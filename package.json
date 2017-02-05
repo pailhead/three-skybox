@@ -1,6 +1,6 @@
 {
   "name": "three-skybox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "an abstract skybox class for three.js",
   "main": "index.js",
   "dependencies": {},
