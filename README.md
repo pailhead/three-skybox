@@ -4,7 +4,7 @@
 
 [![NPM](https://nodei.co/npm/three-skybox.png)](https://npmjs.org/package/three-skybox)
 
-[A self contained class for drawing a skybox](http://dusanbosnjak.com/test/webGL/three-skybox/). This feature now exists in three.js (`Scene.background`) but uses matrices to compute the camera. This one has a slightly different approach, since the cameraPosition is available in shaders as a uniform by default, we can avoid some computation that happens with the `backgroundBoxCamera` in `THREE.WebGLRenderer`. 
+[A self contained class for drawing a skybox](http://dusanbosnjak.com/test/webGL/three-skybox/) for [three.js](https://github.com/mrdoob/three.js/). This feature now exists in three.js (`Scene.background`) but uses matrices to compute the camera. This one has a slightly different approach, since the cameraPosition is available in shaders as a uniform by default, we can avoid some computation that happens with the `backgroundBoxCamera` in `THREE.WebGLRenderer`. 
 
 The shader here does one addition and 2 matrix multiplications:
 
